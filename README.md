@@ -34,6 +34,7 @@ The doc folder contains the pictures of the hardware.
 
 Dependencies:
 - [Arduino library for MFRC522](https://github.com/miguelbalboa/rfid)
+- Python 2.7
 - Command line utility to unlock/lock computer (must be provided by user)
 
 The project has:
