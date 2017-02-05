@@ -4,6 +4,12 @@ Made in/with/at [Revspace](http://revspace.nl)
 
 Basic usage [video](https://youtu.be/0Dn9kWpbn1k)
 
+Soldered [assembly](https://github.com/asomov/cardiolock/blob/master/doc/20170204_152847.jpg)
+
+[Connected to computer](https://github.com/asomov/cardiolock/blob/master/doc/20170205_135643.jpg)
+
+With the [box](https://github.com/asomov/cardiolock/blob/master/doc/20170205_135107.jpg)
+
 ### Hardware
 
 - Mifare [RFID reader](https://github.com/asomov/cardiolock/blob/master/doc/RC522_1.jpg)
