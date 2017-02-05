@@ -13,8 +13,8 @@ PROGRAM_UNLOCK=["cinnamon-screensaver-command", "-d"]
 # Define arguments for subprocess.call() to lock
 # or assign it to None to only unlock
 # Linux Mint => cinnamon-screensaver-command -l
-PROGRAM_LOCK=["cinnamon-screensaver-command", "-l"]
-#PROGRAM_LOCK=None
+# PROGRAM_LOCK=["cinnamon-screensaver-command", "-l"]
+PROGRAM_LOCK=None
 
 class CardComm(object):
 
@@ -48,12 +48,16 @@ class CardComm(object):
         #self.connector.close()
 
     def trigger(self):
-        if self.locked:
+        if PROGRAM_LOCK:
+            if self.locked:
+                print("Unlock")
+                call(PROGRAM_UNLOCK)
+            else:
+                print("Lock")
+                call(PROGRAM_LOCK)
+        else:
             print("Unlock")
             call(PROGRAM_UNLOCK)
-        else:
-            print("Lock")
-            call(PROGRAM_LOCK)
 
         self.locked = not self.locked
 
