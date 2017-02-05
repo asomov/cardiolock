@@ -11,6 +11,8 @@ Basic usage [video](https://youtu.be/0Dn9kWpbn1k)
 - Arduino [nano](https://www.arduino.cc/en/Main/arduinoBoardNano) (with USB-to-TTL)
 - USB cabel
 
+The doc folder contains the pictures of the hardware.
+
 **MFRC522 -> Arduino Nano**
 
 - 3.3 V -> 3.3 V
