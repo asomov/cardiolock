@@ -6,14 +6,15 @@ from subprocess import call
 # Define the location of the USB port (ls /dev/tty*)
 USB_NAME="/dev/ttyUSB0"
 
-# Define arguments for subprocess.call() to lock
-# Linux Mint => cinnamon-screensaver-command -l
-PROGRAM_LOCK=["cinnamon-screensaver-command", "-l"]
-
 # Define arguments for subprocess.call() to unlock
 # Linux Mint => cinnamon-screensaver-command -d
 PROGRAM_UNLOCK=["cinnamon-screensaver-command", "-d"]
 
+# Define arguments for subprocess.call() to lock
+# or assign it to None to only unlock
+# Linux Mint => cinnamon-screensaver-command -l
+PROGRAM_LOCK=["cinnamon-screensaver-command", "-l"]
+#PROGRAM_LOCK=None
 
 class CardComm(object):
 
