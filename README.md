@@ -45,17 +45,24 @@ The project has:
 
 1. Install [Arduino library for MFRC522](https://github.com/miguelbalboa/rfid)
 2. Upload provided mfrc522-cardiolock.ino to Arduino
-3. Use your favorite text editor to configure cardiolock.py
+3. Configure [connection to USB without root privileges](http://askubuntu.com/a/210230)
+
+  - `groups ${USER}`
+  - `sudo gpasswd --add ${USER} dialout`
+  
+You then need to log out and log back in again for it to be effective. 
+
+4. Use your favorite text editor to configure cardiolock.py
   - check which USB port is used by Arduino and define it as USB_NAME (`ls /dev/tty*`)
   - find out the way to unlock your computer from the command line and
     define it as PROGRAM_UNLOCK
   - if you want to lock the computer with the card define also PROGRAM_LOCK,
     otherwise assign it to None and lock the computer manually
-4. Launch `.run_cardiolock.sh`
-5. Use you Mifare card as master card once
-6. Use the same card to unlock (or lock) your computer
-7. Enjoy having fun without typing your password.
-8. If you are afraid to forget your password because you do not use it anymore
+5. Launch `.run_cardiolock.sh`
+6. Use you Mifare card as master card once
+7. Use the same card to unlock (or lock) your computer
+8. Enjoy having fun without typing your password.
+9. If you are afraid to forget your password because you do not use it anymore
    just write it down and stick it to your monitor.
 
 Your feedback is welcome !
