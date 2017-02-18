@@ -39,7 +39,7 @@ Dependencies:
 
 The project has:
 - The Arduino program to read UIDs (mfrc522-cardiolock.ino)
-- The Python 2 program to communicate with Arduino via USB (should also work with Python 3, but not tested)
+- The Python 2 program to communicate to Arduino via USB (should also work with Python 3, but not tested)
 
 ### Usage
 
